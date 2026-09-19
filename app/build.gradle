@@ -1,0 +1,21 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'io.github.myapp'
+    compileSdkVersion 36
+    buildToolsVersion "36.0.0"
+
+    defaultConfig {
+        applicationId "io.github.myapp"
+        minSdkVersion 14
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
